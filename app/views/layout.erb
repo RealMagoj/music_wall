@@ -6,18 +6,22 @@
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
   -->
-  <link rel="stylesheet" href="/stylesheets/normalize.css">
+  <link rel="stylesheet" href="/stylesheets/application.css">
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css">
   <!--
     application.css is where you put your styles
   -->
-  <link rel="stylesheet" href="/stylesheets/application.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/javascript/application.js"></script>
+  <!-- <script src="/vendor/bootstrap/js/bootstrap.js"></script> -->
 
   <title></title>
 </head>
 <body>
-  <%= yield %>
+  <div id="background">
+    <img src="http://bravewords.com/medias-static/images/news/2014/5498522E-pink-floyd-members-deconstruct-epic-1979-album-the-wall-on-35th-anniversary-inthestudio-interview-part-2-now-online-image.jpg" class="stretch"/>
+  </div>
+    <%= yield %>
 </body>
 </html>

@@ -1,0 +1,80 @@
+#background {
+ width: 100%;
+ height: 100%;
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ z-index: -1;
+}
+.stretch {
+  width: 100%;
+  height: 100%;
+}
+.title a,
+.artist {
+  color: #FC0303;
+  font-family: arial;
+}
+h3.title {
+  margin: 0;
+}
+.title {
+  font-size: 20px;
+}
+.artist {
+  font-size: 15px;
+}
+.tracks {
+  border-radius: 5px;
+  background-color: rgba(204, 182, 182, 0.8);
+  margin-top: 0;
+  margin-left: 25px;
+}
+.track {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.post_track {
+  text-align: center;
+}
+.post_track_colour {
+  font-weight: 900;
+  color: #000000;
+}
+.content {
+  width: 35%;
+  min-width: 320px;
+}
+.show_tracks {
+  background-color: rgba(204, 182, 182, 0.8);
+  width: 35%;
+  min-width: 320px;
+  color: #FC0303;
+  margin-top: 25px;
+  margin-left: 25px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.show_tracks h2{
+  margin-top: 0px;
+}
+.add_track {
+  background-color: rgba(204, 182, 182, 0.8);
+  border-radius: 5px;
+  width: 33.33%;
+  min-width: 320px;
+  text-align: center;
+  margin-left: 75px;
+  margin-top: 175px;
+  padding: 15px;
+}
+.add h3 {
+  margin-top: 0px;
+}
+.input {
+  width: 275px;
+}

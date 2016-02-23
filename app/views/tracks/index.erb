@@ -1,7 +1,18 @@
-<a href="/tracks/new">Post a track...</a>
-<% @tracks.each do |track| %>
-  <div class="track">
-    <h3><a href="/tracks/<%= track.id %>"><%= track.title %></a>
-      <small>(by: <%= track.artist %>)</small></h3><a href="<%= track.url %>"><%= track.url %></a>
+<div class="content">
+  <h1 class="post_track"><a class="post_track_colour" href="/tracks/new">Post a track...</a></h1>
+  <div class="tracks">  
+    <% @tracks.each do |track| %>
+      <div class="track">
+        <h3 class="title">
+          <a href="/tracks/<%= track.id %>"><%= track.title %></a>
+        </h3>
+        <div class="artist">
+          <small>(by: <%= track.artist %>)</small>
+        </div>
+        <div class="url">
+          <a href="<%= track.url %>"><%= track.url %></a>
+        </div>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
