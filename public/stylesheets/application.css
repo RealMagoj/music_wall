@@ -29,6 +29,7 @@ h3.title {
   background-color: rgba(204, 182, 182, 0.8);
   margin-top: 0;
   margin-left: 25px;
+  margin-bottom: 25px;
 }
 .track {
   padding-top: 10px;
@@ -53,6 +54,7 @@ h3.title {
   color: #FC0303;
   margin-top: 25px;
   margin-left: 25px;
+  margin-bottom: 25px;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -74,7 +76,4 @@ h3.title {
 }
 .add h3 {
   margin-top: 0px;
-}
-.input {
-  width: 275px;
 }

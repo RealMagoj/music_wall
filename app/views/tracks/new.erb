@@ -14,20 +14,20 @@
     <div class="add">  
       <h3>Add a song to the Music Wall:</h3>
     </div>
-    <div>
+    <div class="form-group">
       <label>Title:</label>
-      <input class="input" type="text" name="title" value="<%= @track && @track.title %>">
+      <input class="form-control" type="text" name="title" value="<%= @track && @track.title %>">
     </div>
-    <div>
+    <div class="form-group">
       <label>Artist:</label>
-      <input class="input" type="text" name="artist" value="<%= @track && @track.artist %>">
+      <input class="form-control" type="text" name="artist" value="<%= @track && @track.artist %>">
     </div>
-    <div>
+    <div class="form-group">
       <label>URL:</label>
-      <input class="input" type="text" name="url" value="<%= @track && @track.url %>">
+      <input class="form-control" type="text" name="url" value="<%= @track && @track.url %>">
     </div>
     <div>
-      <input type="submit" value="Submit">
+      <input class="btn btn-default" type="submit" value="Submit">
     </div>
   </form>
 </div>
