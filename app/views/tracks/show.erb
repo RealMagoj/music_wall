@@ -1,8 +1,8 @@
 <div class="show_tracks">
-  <h2><%= @track.title %></h2>
+  <h3><strong><%= @track.title %></strong></h3>
 
   <p>
-    Artist: <%= @track.artist %>
+    <strong>Artist: <%= @track.artist %></strong>
   </p>
 
   <p>
@@ -13,19 +13,20 @@
     <small>Created at: <%= @track.created_at %></small>
   </p>
 
-<hr/>
+  <hr/>
 
-<h4>Other tracks from this artist:</h4>  
-<% Track.where(artist: @track.artist).each do |track| %>
-  <div>
-    <p>
-      <a href="/tracks/<%= track.id %>"><%= track.title %></a>
-    </p>
-  </div>
-<% end %>
+  <h5>Other tracks from this artist:</h5>  
+  
+  <% Track.where(artist: @track.artist).each do |track| %>
+    
+      <p>
+        <h5><a href="/tracks/<%= track.id %>"><%= track.title %></a></h5>
+      </p>
+    
+  <% end %>
 
-<hr/>
+  <hr/>
 
-<a href="/tracks">Back to All Tracks</a>
+  <a href="/tracks">Back to All Tracks</a>
 
 </div>
